@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  font-family: "Teko", sans-serif;
+}
+
+header {
+  grid-area: header;
+  padding: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../assets/hero_header-kayakers.jpg");
+  min-height: 500px;
+}
+
+h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 70px;
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  margin-bottom: 0%;
+}
+
+.title-block {
+  margin-top: 6%;
+}
+
+.rivers {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+  color: white;
+  margin: 0%;
+}
+
+nav {
+  grid-area: nav;
+  background-color: white;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px; */
+}
+
+.logo {
+  display: inline-block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  font-size: 35px;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #0d6893;
+  transition: 0.4s;
+}
+
+.nav-item:hover a {
+  color: #ffc107;
+}
+
+.logo img {
+  width: 100px;
+  vertical-align: middle;
+}
+main {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 7fr;
+  grid-template-areas:
+    "h2 h2 h2"
+    "p p p"
+    "top-left top-center top-right"
+    "lead lead lead"
+    "lead-info lead-info lead-info"
+    "book book book"
+    "bk-info bk-info bk-info"
+    
+    ;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+h2 {
+  grid-area: h2;
+  color: #343b49;
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 0%;
+  text-decoration: none solid rgb(52, 59, 73);
+}
+.adventure_info {
+  grid-area: p;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 200;
+  justify-self: center;
+}
+
+article {
+  background: white;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  color: #545454;
+}
+.text {
+  padding: 0 20px 20px;
+}
+.text > button {
+  background: #25aaf7;
+  border: 2px solid #25aaf7;
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  transition: 0.4s;
+}
+
+button:hover {
+  background: rgb(18, 86, 126);
+  border: 2px solid rgb(18, 86, 126);
+}
+.left-photo img {
+  grid-area: top-left;
+  max-height: 238px;
+}
+
+.center-photo img {
+  grid-area: top-center;
+  max-height: 238px;
+}
+.right-photo img {
+  grid-area: top-right;
+  max-height: 238px;
+}
+.lead {
+  grid-area: lead;
+  padding: 20px;
+  
+}
+
+.lead_info {
+  grid-area: l-info;
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.how_it_works {
+  font-family: Montserrat;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 46px;
+  color: #343b49;
+}
+
+.book {
+    margin-top: 10px;;
+    grid-area: book;
+    padding:20px;
+}
+.book_title {
+  font-family: Montserrat;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 46px;
+  color: #343b49;
+}
+.book_info {
+  grid-area: bk-info;
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 25px;
+}
+.book_button {
+  background: #25aaf7;
+  border: 2px solid #25aaf7;
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  transition: 0.4s;
+  
+}
+
+footer {
+  padding: 20px;
+  grid-area: footer;
+  background-color: rgb(248, 237, 82);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 110px auto;
+  grid-template-areas:
+    "nav  nav"
+    "header  header"
+    "content content"
+    "footer  footer";
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    grid-template-columns: 4fr;
+    grid-template-rows: 4fr;
+    grid-template-areas:
+      "nav"
+      "header"
+      "content"
+      "footer";
+  }
+}
+@media (max-width: 500px) {
+  main {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "h2 h2 h2"
+      "top-left"
+      "top-center"
+      "top-right"
+      "mid-left"
+      "mid-center"
+      "mid-right"
+      "btm-left"
+      "btm-center"
+      "btm-right";
+  }
+}
