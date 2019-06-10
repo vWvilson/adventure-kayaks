@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="./style/style.css">
-    <title>Document</title>
+    <title>Kayak Adventures</title>
 </head>
 
 <body>
@@ -17,11 +17,11 @@
 
 
         <nav class="navbar">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img src="./assets/kayak.jpeg" alt="kayak logo">
             </a>
             <ul class="nav-links">
-                <li class="nav-item"><a href="#">About Us</a></li>
+                <li class="nav-item"><a href="./pages/about.html">About Us</a></li>
                 <li class="nav-item"><a href="#">Rentals</a></li>
                 <li class="nav-item"><a href="#">Find Us</a></li>
             </ul>
@@ -111,7 +111,7 @@
                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. 
                     Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum.
                 </p>
-                <button  class = "book_button">Book Now</button>
+                <button id="book_btn"class="book_button">Book Now</button>
             </div> 
                     
                     
@@ -127,7 +127,36 @@
         
 
         <footer>Footer</footer>
-    </div>
+
+        <!-- modal -->
+        
+        <div class="modal_bg">
+                <div class ="modal_content"> 
+                    <div class="close">+</div>
+                    <img height="120px"src="../assets/kayak.jpeg" alt="">  
+                    <form action="">
+                        <input type="text" placeholder="NAME">
+                        <input type="text" placeholder="EMAIL">
+                        <button height = "40px"class="book_button">submit</button>
+                    </form>              
+                </div>
+            </div>
+        </div>
+    
+</body>
+        <!--end modal-->
+    
+    
+    <script>
+        document.getElementById('book_btn').addEventListener('click',
+        function(){
+            document.querySelector('.modal_bg').style.display = 'grid';
+        })
+
+        document.querySelector('.close').addEventListener('click', function(){
+            document.querySelector('.modal_bg').style.display = 'none';
+        })
+    </script>
 </body>
 
 </html>

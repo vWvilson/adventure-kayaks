@@ -13,6 +13,7 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("../assets/hero_header-kayakers.jpg");
   min-height: 500px;
+  
 }
 
 h1 {
@@ -108,8 +109,8 @@ h2 {
   line-height: 50px;
   text-align: center;
   margin-bottom: 0%;
-  text-decoration: none solid rgb(52, 59, 73);
 }
+
 .adventure_info {
   grid-area: p;
   font-family: "Raleway", sans-serif;
@@ -146,6 +147,8 @@ h3 {
 button:hover {
   background: rgb(18, 86, 126);
   border: 2px solid rgb(18, 86, 126);
+  cursor: pointer;
+
 }
 .left-photo img {
   grid-area: top-left;
@@ -228,6 +231,55 @@ footer {
     "footer  footer";
 }
 
+
+/* -----------------MODAL------------ */
+
+.modal_bg {
+    height: 100vh;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal_content {
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+
+}
+
+input {
+    width: 50%;
+    display: block;
+    margin: 15px auto;
+}
+
+
+.close {
+    position: absolute;
+    right: 14px;
+    font-size: 40px;
+    transform: rotate(45deg);
+    top:0;
+    cursor: pointer;
+
+}
+
+/* ---------------END MODAL------------- */
+
+
+/* ----------------ABOUT PAGE---------- */
+
+    
 @media (max-width: 500px) {
   .wrapper {
     grid-template-columns: 4fr;
