@@ -1,84 +1,118 @@
 body {
-    margin: 0;
-    font-family: "Teko", sans-serif;
-  }
+  margin: 0;
+  font-family: "Teko", sans-serif;
+}
 
-
-  /* ------------nav----------------- */
+/* ------------nav----------------- */
 nav {
-    grid-area: nav;
-    background-color: white;
-    padding: 20px;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* padding: 20px; */
-  }
-  
-  .logo {
-    display: inline-block;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    font-size: 35px;
-  }
-  
-  .nav-item a {
-    display: inline-block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: #0d6893;
-    transition: 0.4s;
-  }
-  
-  .nav-item:hover a {
-    color: #ffc107;
-  }
-  
-  .logo img {
-    width: 100px;
-    vertical-align: middle;
-  }
+  grid-area: nav;
+  background-color: white;
+  padding: 20px;
+}
 
-  /* ---------------end nav--------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.logo {
+  display: inline-block;
+}
 
-.about_wrapper{
-    display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: 110px auto;
-     grid-template-areas:
-       "nav nav nav"
-       "about about about"
-       "about-footer about-footer about-footer";
-   }
-   
-   main {
-       grid-area: about;
-       justify-content: center;
-       align-content: center;
-   }
-   .about_title {
-    color: #343b49;
-    font-family: "Montserrat", sans-serif;
-    font-size: 55px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    line-height: 70px;
-    text-align: center;
-    margin-bottom: 0%;
-   }
-   footer {
-    padding: 20px;
-    grid-area: footer;
-    background-color: rgb(248, 237, 82);
+.nav-links {
+  list-style: none;
+  display: flex;
+  font-size: 35px;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #0d6893;
+  transition: 0.4s;
+}
+
+.nav-item:hover a {
+  color: #ffc107;
+}
+
+.logo img {
+  width: 100px;
+  vertical-align: middle;
+}
+
+/* ---------------end nav--------------------- */
+
+/*  */
+.about_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 110px ;
+  grid-template-areas:
+    "nav nav nav"
+    "about about about"
+    "info info founder"
+    "about-footer about-footer about-footer";
+    
+}
+
+.content_heading {
+  grid-area: about;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+.about_title {
+  color: #343b49;
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 70px;
+  text-align: center;
+  margin-bottom: 0%;
+}
+hr {
+    height: 0px;
+    width: 550px;
+    font-size: 15px;
+    color: #25aaf7;
+    line-height: 25px;
+    border-top: 3px solid #25aaf7;
   }
-   .about_footer {
-       grid-area: about-footer;
-   }
-   
+.lead {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 25px;
+  grid-area: info;
+  grid-column-end: info;
+}
+.founder {
+  grid-area: founder;
+}
+
+footer {
+  padding: 20px;
+  margin: 0;
+  grid-area: about-footer;
+  background-color: rgb(248, 237, 82);
+}
+
+@media (max-width:500px) {
+    .about_wrapper {grid-template-areas: 
+    "nav nav nav"
+    "about about about"
+    "info info info"
+    "founder founder founder"
+    "about-footer about-footer about-footer";
+    }
+}

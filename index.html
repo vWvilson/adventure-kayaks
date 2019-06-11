@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="./style/style.css">
-    <title>Kayak Adventures</title>
+    <title>KAYAK ADVENTURES</title>
 </head>
 
 <body>
@@ -76,14 +76,14 @@
             </article>
 
             <article class="right-photo">
-                <img src="./assets/375_ohio.jpg" alt="a picture of the ohio river in dowtown pittsbugh">
+                <img width="357px" height="238px" src="./assets/375_ohio.jpg"
+                    alt="a picture of the ohio river in dowtown pittsbugh">
                 <div class="text">
                     <h3>Ohio River</h3>
                     <p class="right-photo-info">The Ohio River is a 981-mile (1,579 km) long river in the midwestern
                         United States that
                         flows southwesterly from western Pennsylvania south of Lake Erie to its mouth on
-                        the Mississippi River at the southern tip of Illinois. It is the second largest river by
-                        discharge volume.
+                        the Mississippi River at the southern tip of Illinois. It is the second largest river by volume.
                     </p>
                     <button>Learn More</button>
                 </div>
@@ -92,71 +92,75 @@
 
             <div class="lead">
                 <strong class="how_it_works">How it Works</strong>
-            
-            <p class="lead_info">Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat
-                condimentum velit.
-                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante
-                quis turpis.
-                Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.
-                Vestibulum sapien. Proin quam.
-            </p>
-            <hr>
-        </div>
-       
-                    
-             <div class="book">
+
+                <p class="lead_info">Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque
+                    volutpat
+                    condimentum velit.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum
+                    ante
+                    quis turpis.
+                    Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.
+                    Vestibulum sapien. Proin quam.
+                </p>
+                <hr>
+            </div>
+
+
+            <div class="book">
                 <strong class="book_title"> Book your adventure now</strong>
-                <p class="book_info">Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. 
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. 
+                <p class="book_info">Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum
+                    magna augue eget diam.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi
+                    lacinia molestie dui.
                     Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum.
                 </p>
-                <button id="book_btn"class="book_button">Book Now</button>
-            </div> 
-                    
-                    
-                
-            
-        
-                
-            
-            
+                <button id="book_btn" class="book_button">Book Now</button>
+            </div>
+
+
+
+
+
+
+
+
 
 
         </main>
-        
+
 
         <footer>Footer</footer>
 
         <!-- modal -->
-        
+
         <div class="modal_bg">
-                <div class ="modal_content"> 
-                    <div class="close">+</div>
-                    <img height="120px"src="../assets/kayak.jpeg" alt="">  
-                    <form action="">
-                        <input type="text" placeholder="NAME">
-                        <input type="text" placeholder="EMAIL">
-                        <button height = "40px"class="book_button">submit</button>
-                    </form>              
-                </div>
+            <div class="modal_content">
+                <div class="close">+</div>
+                <img height="120px" src="../assets/kayak.jpeg" alt="">
+                <form action="">
+                    <input type="text" placeholder="NAME">
+                    <input type="text" placeholder="EMAIL">
+                    <button height="40px" class="book_button">submit</button>
+                </form>
             </div>
         </div>
-    
+    </div>
+
 </body>
-        <!--end modal-->
-    
-    
-    <script>
-        document.getElementById('book_btn').addEventListener('click',
-        function(){
+<!--end modal-->
+
+
+<script>
+    document.getElementById('book_btn').addEventListener('click',
+        function () {
             document.querySelector('.modal_bg').style.display = 'grid';
         })
 
-        document.querySelector('.close').addEventListener('click', function(){
-            document.querySelector('.modal_bg').style.display = 'none';
-        })
-    </script>
+    document.querySelector('.close').addEventListener('click', function () {
+        document.querySelector('.modal_bg').style.display = 'none';
+    })
+</script>
 </body>
 
 </html>
