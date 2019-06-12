@@ -209,11 +209,7 @@ button:hover {
   transition: 0.4s;
 }
 
-footer {
-  padding: 20px;
-  grid-area: footer;
-  background-color: rgb(248, 237, 82);
-}
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -224,6 +220,33 @@ footer {
     "content content"
     "footer  footer";
 }
+
+/* -------footer------ */
+
+.about_footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-area: about-footer;
+  background-color: #456087;
+  color: white;
+}
+.company-name {
+  font-size: 45px;
+  margin-left: 20px;
+  margin-bottom: -15px;
+}
+.co-name1 {
+  color: orange;
+}
+
+.footer-p {
+  margin-top: 0;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 25px;
+  margin-left: 25px;
+}
+
 
 /* -----------------MODAL------------ */
 
