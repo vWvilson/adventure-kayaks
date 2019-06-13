@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Teko", sans-serif;
@@ -209,7 +213,6 @@ button:hover {
   transition: 0.4s;
 }
 
-
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -256,8 +259,8 @@ button:hover {
   grid-row-start: 1;
 }
 .tele {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .copy {
@@ -313,30 +316,73 @@ input {
 
 /* ----------------ABOUT PAGE---------- */
 
-@media (max-width: 650px) {
+@media only screen and (max-width: 600px) {
+  .scene,
+  .scene-wrapper,
+  .footer-p,
+  .second-title {
+    display: none;
+  }
+  body,
   .wrapper {
-    grid-template-columns: 4fr;
-    grid-template-rows: 4fr;
-    grid-template-areas:
-      "nav"
-      "header"
-      "content"
-      "footer";
+    display: block;
+    width: 100%;
   }
-}
-@media (max-width: 650px) {
-  main {
+  .contact {
+    font-family: "Product Sans";
+    letter-spacing: 1px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    text-align: center;
+  }
+  .about_footer {
+    display: grid;
     grid-template-columns: auto;
-    grid-template-areas:
-      "h2 h2 h2"
-      "top-left"
-      "top-center"
-      "top-right"
-      "mid-left"
-      "mid-center"
-      "mid-right"
-      "btm-left"
-      "btm-center"
-      "btm-right";
+    grid-template-rows: auto;
+    grid-area: about-footer;
+    background-color: #456087;
+    color: white;
   }
+
+  .title-block {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    margin: 0%;
+  }
+  header {
+    display: block;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url("../assets/hero_header-kayakers-media.jpg") center center cover
+        no-repeat fixed;
+
+  }
+  .navbar,
+  .logo {
+    display: flex;
+  }
+  .logo {
+    text-align: center;
+    display: block;
+  }
+  .nav-links {
+    display: inline;
+    font-size: 25px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .company-name {
+    font-size: 40px;
+    margin-bottom: -15px;
+    text-align: center;
+  }
+  main {
+    display: flex;
+    display: block;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
 }
+}
+    
