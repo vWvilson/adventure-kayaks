@@ -261,9 +261,19 @@ hr {
   }
   .navbar,.logo {
     display: flex;
-    display: block;
+    /* display: block; */
   }.logo {
       text-align: center;
       display: block;
+  }.nav-links {
+    display: inline;
+    font-size: 25px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }.company-name {
+    font-size: 40px;
+    margin-bottom: -15px;
+    text-align: center;
   }
 }
