@@ -313,7 +313,7 @@ input {
 
 /* ----------------ABOUT PAGE---------- */
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .wrapper {
     grid-template-columns: 4fr;
     grid-template-rows: 4fr;
@@ -324,7 +324,7 @@ input {
       "footer";
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   main {
     grid-template-columns: auto;
     grid-template-areas:
